@@ -1,3 +1,5 @@
+import 'package:appointment_doctor_app/core/helper/extenstion.dart';
+import 'package:appointment_doctor_app/core/routing/routes.dart';
 import 'package:appointment_doctor_app/core/theming/color_manager.dart';
 import 'package:flutter/material.dart';
 
@@ -9,7 +11,9 @@ class GetStartedButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextButton(
-        onPressed: (){},
+        onPressed: (){
+          context.pushNamed(Routes.logInScreen);
+        },
       style: ButtonStyle(
         backgroundColor: MaterialStateProperty.all(ColorManager.mainBlue),
         tapTargetSize: MaterialTapTargetSize.shrinkWrap,
@@ -18,7 +22,7 @@ class GetStartedButton extends StatelessWidget {
           borderRadius: BorderRadius.circular(16),
         ))
       ),
-        child: Text('Get Started',style: TextStyles.font16WhiteSemiBold,),
+        child: Text('Get Started',style: TextStyles.font16WhiteMedium,),
     );
   }
 }
