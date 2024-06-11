@@ -10,6 +10,7 @@ import '../../../core/theming/styles.dart';
 import '../../../core/widgets/app_text_button.dart';
 import '../../login/ui/widgets/terms_and_conditions_text.dart';
 import '../logic/sign_up_cubit.dart';
+
 class SignupScreen extends StatelessWidget {
   const SignupScreen({super.key});
 
