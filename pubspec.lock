@@ -557,6 +557,7 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.0.5"
+
   nested:
     dependency: transitive
     description:
@@ -1026,6 +1027,7 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.4.0"
+
   win32:
     dependency: transitive
     description:
@@ -1061,3 +1063,4 @@ packages:
 sdks:
   dart: ">=3.2.3 <4.0.0"
   flutter: ">=3.16.6"
+
