@@ -1,12 +1,12 @@
-
-name: Android FastLane with Firebase App Distribution Workflow
+name: Android Fastlane with Firebase App Distribution Workflow
 
 on:
   push:
     branches:
       - master
+
 jobs:
-  distribte_to_firebase:
+  distribute_to_firebase:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout my repo code
@@ -32,7 +32,8 @@ jobs:
 
       - name: Build and Distribute App
         env:
-          FIREBASE_CLI_TOKEN: ${{secrets.FIREBASE_CLI_TOKEN}}
-        run:
+          FIREBASE_CLI_TOKEN: ${{ secrets.FIREBASE_CLI_TOKEN }}
+        run: |
           bundle exec fastlane android firebase_distribution
         working-directory: android
+
