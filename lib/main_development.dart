@@ -11,7 +11,6 @@ import 'doc_app.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await ScreenUtil.ensureScreenSize();
-
   setUpGetIt();
   Bloc.observer = MyBlocObserver();
   runApp(DocApp(
