@@ -18,7 +18,7 @@ class AppRouter {
       case Routes.onBoardingScreen:
         return MaterialPageRoute(builder: (_) => const OnBoardingScreen());
       case Routes.homeScreen:
-        return MaterialPageRoute(builder: (_) => const HomeScreen());
+        return MaterialPageRoute(builder: (_) => const HomeScreenWidget());
       case Routes.logInScreen:
         return MaterialPageRoute(
           builder: (_) => BlocProvider(
