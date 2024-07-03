@@ -8,7 +8,7 @@ class HomeScreenWidget extends StatelessWidget {
     return const Scaffold(
       body: SafeArea(
         child: Center(
-          child: Text('WELCOME TOO HOMEEEEEE !!!!!!!!!'),
+          child: Text('WELCOME TOO HOMEEEEE !!!!!!!!!'),
         ),
       ),
     );
