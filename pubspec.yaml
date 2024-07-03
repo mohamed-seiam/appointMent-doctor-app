@@ -55,8 +55,8 @@ dependencies:
   build_runner: ^2.4.7
 
   # localization
-  intl: ^0.18.1
-  easy_localization: ^3.0.3
+  intl: any
+  easy_localization: ^3.0.7
   flutter_native_splash: ^2.3.5
   cached_network_image: ^3.3.0
   # showing svg in flutter
