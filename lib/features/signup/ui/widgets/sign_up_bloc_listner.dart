@@ -65,6 +65,7 @@ class SignupBlocListener extends StatelessWidget {
               },
               child: const Text('Continue'),
             ),
+
           ],
         );
       },
