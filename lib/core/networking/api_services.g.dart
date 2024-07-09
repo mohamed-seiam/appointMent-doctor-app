@@ -6,7 +6,7 @@ part of 'api_services.dart';
 // RetrofitGenerator
 // **************************************************************************
 
-// ignore_for_file: unnecessary_brace_in_string_interps,no_leading_underscores_for_local_identifiers
+// ignore_for_file: unnecessary_brace_in_string_interps,no_leading_underscores_for_local_identifiers,unused_element
 
 class _ApiServices implements ApiServices {
   _ApiServices(
@@ -44,8 +44,8 @@ class _ApiServices implements ApiServices {
               _dio.options.baseUrl,
               baseUrl,
             ))));
-    final value = LoginResponse.fromJson(_result.data!);
-    return value;
+    final _value = LoginResponse.fromJson(_result.data!);
+    return _value;
   }
 
   @override
@@ -72,8 +72,8 @@ class _ApiServices implements ApiServices {
               _dio.options.baseUrl,
               baseUrl,
             ))));
-    final value = SignUpResponse.fromJson(_result.data!);
-    return value;
+    final _value = SignUpResponse.fromJson(_result.data!);
+    return _value;
   }
 
   RequestOptions _setStreamType<T>(RequestOptions requestOptions) {

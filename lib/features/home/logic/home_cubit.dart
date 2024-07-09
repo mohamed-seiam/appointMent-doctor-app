@@ -1,9 +1,21 @@
-import 'package:bloc/bloc.dart';
-import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
-part 'home_state.dart';
-part 'home_cubit.freezed.dart';
+import '../data/repos/home_repo.dart';
+import 'home_state.dart';
 
 class HomeCubit extends Cubit<HomeState> {
-  HomeCubit() : super(const HomeState.initial());
+  final HomeRepo _homeRepo;
+  HomeCubit(this._homeRepo) : super(const HomeState.initial());
+  void getSpecialization() async {
+    emit(const HomeState.specializationLoading());
+    final result = await _homeRepo.getSpecialization();
+    result.when(
+      success: (specializationResponseModel) {
+        emit(HomeState.specializationSuccess(specializationResponseModel));
+      },
+      failure: (error) {
+        emit(HomeState.specializationError(error.apiErrorModel.message!));
+      },
+    );
+  }
 }
