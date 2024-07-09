@@ -1,6 +1,6 @@
 import 'package:appointment_doctor_app/core/di/dependency_injection.dart';
 import 'package:appointment_doctor_app/core/routing/routes.dart';
-import 'package:appointment_doctor_app/features/home/ui/widgets/home_screen.dart';
+import 'package:appointment_doctor_app/features/home/ui/home_screen.dart';
 import 'package:appointment_doctor_app/features/login/logic/cubit/login_cubit.dart';
 import 'package:appointment_doctor_app/features/signup/logic/sign_up_cubit.dart';
 import 'package:flutter/material.dart';
