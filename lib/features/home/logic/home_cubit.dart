@@ -14,7 +14,7 @@ class HomeCubit extends Cubit<HomeState> {
         emit(HomeState.specializationSuccess(specializationResponseModel));
       },
       failure: (error) {
-        emit(HomeState.specializationError(error.apiErrorModel.message!));
+        emit(HomeState.specializationError(error));
       },
     );
   }

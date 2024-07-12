@@ -23,7 +23,7 @@ mixin _$HomeState {
     required TResult Function(
             SpecializationResponseModel specializationResponseModel)
         specializationSuccess,
-    required TResult Function(String message) specializationError,
+    required TResult Function(ErrorHandler error) specializationError,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -32,7 +32,7 @@ mixin _$HomeState {
     TResult? Function()? specializationLoading,
     TResult? Function(SpecializationResponseModel specializationResponseModel)?
         specializationSuccess,
-    TResult? Function(String message)? specializationError,
+    TResult? Function(ErrorHandler error)? specializationError,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -41,34 +41,34 @@ mixin _$HomeState {
     TResult Function()? specializationLoading,
     TResult Function(SpecializationResponseModel specializationResponseModel)?
         specializationSuccess,
-    TResult Function(String message)? specializationError,
+    TResult Function(ErrorHandler error)? specializationError,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
-    required TResult Function(_SpecializationLoading value)
+    required TResult Function(SpecializationLoading value)
         specializationLoading,
-    required TResult Function(_SpecializationSuccess value)
+    required TResult Function(SpecializationSuccess value)
         specializationSuccess,
-    required TResult Function(_SpecializationError value) specializationError,
+    required TResult Function(SpecializationError value) specializationError,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial value)? initial,
-    TResult? Function(_SpecializationLoading value)? specializationLoading,
-    TResult? Function(_SpecializationSuccess value)? specializationSuccess,
-    TResult? Function(_SpecializationError value)? specializationError,
+    TResult? Function(SpecializationLoading value)? specializationLoading,
+    TResult? Function(SpecializationSuccess value)? specializationSuccess,
+    TResult? Function(SpecializationError value)? specializationError,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
-    TResult Function(_SpecializationLoading value)? specializationLoading,
-    TResult Function(_SpecializationSuccess value)? specializationSuccess,
-    TResult Function(_SpecializationError value)? specializationError,
+    TResult Function(SpecializationLoading value)? specializationLoading,
+    TResult Function(SpecializationSuccess value)? specializationSuccess,
+    TResult Function(SpecializationError value)? specializationError,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -134,7 +134,7 @@ class _$InitialImpl implements _Initial {
     required TResult Function(
             SpecializationResponseModel specializationResponseModel)
         specializationSuccess,
-    required TResult Function(String message) specializationError,
+    required TResult Function(ErrorHandler error) specializationError,
   }) {
     return initial();
   }
@@ -146,7 +146,7 @@ class _$InitialImpl implements _Initial {
     TResult? Function()? specializationLoading,
     TResult? Function(SpecializationResponseModel specializationResponseModel)?
         specializationSuccess,
-    TResult? Function(String message)? specializationError,
+    TResult? Function(ErrorHandler error)? specializationError,
   }) {
     return initial?.call();
   }
@@ -158,7 +158,7 @@ class _$InitialImpl implements _Initial {
     TResult Function()? specializationLoading,
     TResult Function(SpecializationResponseModel specializationResponseModel)?
         specializationSuccess,
-    TResult Function(String message)? specializationError,
+    TResult Function(ErrorHandler error)? specializationError,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -171,11 +171,11 @@ class _$InitialImpl implements _Initial {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
-    required TResult Function(_SpecializationLoading value)
+    required TResult Function(SpecializationLoading value)
         specializationLoading,
-    required TResult Function(_SpecializationSuccess value)
+    required TResult Function(SpecializationSuccess value)
         specializationSuccess,
-    required TResult Function(_SpecializationError value) specializationError,
+    required TResult Function(SpecializationError value) specializationError,
   }) {
     return initial(this);
   }
@@ -184,9 +184,9 @@ class _$InitialImpl implements _Initial {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial value)? initial,
-    TResult? Function(_SpecializationLoading value)? specializationLoading,
-    TResult? Function(_SpecializationSuccess value)? specializationSuccess,
-    TResult? Function(_SpecializationError value)? specializationError,
+    TResult? Function(SpecializationLoading value)? specializationLoading,
+    TResult? Function(SpecializationSuccess value)? specializationSuccess,
+    TResult? Function(SpecializationError value)? specializationError,
   }) {
     return initial?.call(this);
   }
@@ -195,9 +195,9 @@ class _$InitialImpl implements _Initial {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
-    TResult Function(_SpecializationLoading value)? specializationLoading,
-    TResult Function(_SpecializationSuccess value)? specializationSuccess,
-    TResult Function(_SpecializationError value)? specializationError,
+    TResult Function(SpecializationLoading value)? specializationLoading,
+    TResult Function(SpecializationSuccess value)? specializationSuccess,
+    TResult Function(SpecializationError value)? specializationError,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -230,7 +230,7 @@ class __$$SpecializationLoadingImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$SpecializationLoadingImpl implements _SpecializationLoading {
+class _$SpecializationLoadingImpl implements SpecializationLoading {
   const _$SpecializationLoadingImpl();
 
   @override
@@ -256,7 +256,7 @@ class _$SpecializationLoadingImpl implements _SpecializationLoading {
     required TResult Function(
             SpecializationResponseModel specializationResponseModel)
         specializationSuccess,
-    required TResult Function(String message) specializationError,
+    required TResult Function(ErrorHandler error) specializationError,
   }) {
     return specializationLoading();
   }
@@ -268,7 +268,7 @@ class _$SpecializationLoadingImpl implements _SpecializationLoading {
     TResult? Function()? specializationLoading,
     TResult? Function(SpecializationResponseModel specializationResponseModel)?
         specializationSuccess,
-    TResult? Function(String message)? specializationError,
+    TResult? Function(ErrorHandler error)? specializationError,
   }) {
     return specializationLoading?.call();
   }
@@ -280,7 +280,7 @@ class _$SpecializationLoadingImpl implements _SpecializationLoading {
     TResult Function()? specializationLoading,
     TResult Function(SpecializationResponseModel specializationResponseModel)?
         specializationSuccess,
-    TResult Function(String message)? specializationError,
+    TResult Function(ErrorHandler error)? specializationError,
     required TResult orElse(),
   }) {
     if (specializationLoading != null) {
@@ -293,11 +293,11 @@ class _$SpecializationLoadingImpl implements _SpecializationLoading {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
-    required TResult Function(_SpecializationLoading value)
+    required TResult Function(SpecializationLoading value)
         specializationLoading,
-    required TResult Function(_SpecializationSuccess value)
+    required TResult Function(SpecializationSuccess value)
         specializationSuccess,
-    required TResult Function(_SpecializationError value) specializationError,
+    required TResult Function(SpecializationError value) specializationError,
   }) {
     return specializationLoading(this);
   }
@@ -306,9 +306,9 @@ class _$SpecializationLoadingImpl implements _SpecializationLoading {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial value)? initial,
-    TResult? Function(_SpecializationLoading value)? specializationLoading,
-    TResult? Function(_SpecializationSuccess value)? specializationSuccess,
-    TResult? Function(_SpecializationError value)? specializationError,
+    TResult? Function(SpecializationLoading value)? specializationLoading,
+    TResult? Function(SpecializationSuccess value)? specializationSuccess,
+    TResult? Function(SpecializationError value)? specializationError,
   }) {
     return specializationLoading?.call(this);
   }
@@ -317,9 +317,9 @@ class _$SpecializationLoadingImpl implements _SpecializationLoading {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
-    TResult Function(_SpecializationLoading value)? specializationLoading,
-    TResult Function(_SpecializationSuccess value)? specializationSuccess,
-    TResult Function(_SpecializationError value)? specializationError,
+    TResult Function(SpecializationLoading value)? specializationLoading,
+    TResult Function(SpecializationSuccess value)? specializationSuccess,
+    TResult Function(SpecializationError value)? specializationError,
     required TResult orElse(),
   }) {
     if (specializationLoading != null) {
@@ -329,8 +329,8 @@ class _$SpecializationLoadingImpl implements _SpecializationLoading {
   }
 }
 
-abstract class _SpecializationLoading implements HomeState {
-  const factory _SpecializationLoading() = _$SpecializationLoadingImpl;
+abstract class SpecializationLoading implements HomeState {
+  const factory SpecializationLoading() = _$SpecializationLoadingImpl;
 }
 
 /// @nodoc
@@ -367,7 +367,7 @@ class __$$SpecializationSuccessImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$SpecializationSuccessImpl implements _SpecializationSuccess {
+class _$SpecializationSuccessImpl implements SpecializationSuccess {
   const _$SpecializationSuccessImpl(this.specializationResponseModel);
 
   @override
@@ -407,7 +407,7 @@ class _$SpecializationSuccessImpl implements _SpecializationSuccess {
     required TResult Function(
             SpecializationResponseModel specializationResponseModel)
         specializationSuccess,
-    required TResult Function(String message) specializationError,
+    required TResult Function(ErrorHandler error) specializationError,
   }) {
     return specializationSuccess(specializationResponseModel);
   }
@@ -419,7 +419,7 @@ class _$SpecializationSuccessImpl implements _SpecializationSuccess {
     TResult? Function()? specializationLoading,
     TResult? Function(SpecializationResponseModel specializationResponseModel)?
         specializationSuccess,
-    TResult? Function(String message)? specializationError,
+    TResult? Function(ErrorHandler error)? specializationError,
   }) {
     return specializationSuccess?.call(specializationResponseModel);
   }
@@ -431,7 +431,7 @@ class _$SpecializationSuccessImpl implements _SpecializationSuccess {
     TResult Function()? specializationLoading,
     TResult Function(SpecializationResponseModel specializationResponseModel)?
         specializationSuccess,
-    TResult Function(String message)? specializationError,
+    TResult Function(ErrorHandler error)? specializationError,
     required TResult orElse(),
   }) {
     if (specializationSuccess != null) {
@@ -444,11 +444,11 @@ class _$SpecializationSuccessImpl implements _SpecializationSuccess {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
-    required TResult Function(_SpecializationLoading value)
+    required TResult Function(SpecializationLoading value)
         specializationLoading,
-    required TResult Function(_SpecializationSuccess value)
+    required TResult Function(SpecializationSuccess value)
         specializationSuccess,
-    required TResult Function(_SpecializationError value) specializationError,
+    required TResult Function(SpecializationError value) specializationError,
   }) {
     return specializationSuccess(this);
   }
@@ -457,9 +457,9 @@ class _$SpecializationSuccessImpl implements _SpecializationSuccess {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial value)? initial,
-    TResult? Function(_SpecializationLoading value)? specializationLoading,
-    TResult? Function(_SpecializationSuccess value)? specializationSuccess,
-    TResult? Function(_SpecializationError value)? specializationError,
+    TResult? Function(SpecializationLoading value)? specializationLoading,
+    TResult? Function(SpecializationSuccess value)? specializationSuccess,
+    TResult? Function(SpecializationError value)? specializationError,
   }) {
     return specializationSuccess?.call(this);
   }
@@ -468,9 +468,9 @@ class _$SpecializationSuccessImpl implements _SpecializationSuccess {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
-    TResult Function(_SpecializationLoading value)? specializationLoading,
-    TResult Function(_SpecializationSuccess value)? specializationSuccess,
-    TResult Function(_SpecializationError value)? specializationError,
+    TResult Function(SpecializationLoading value)? specializationLoading,
+    TResult Function(SpecializationSuccess value)? specializationSuccess,
+    TResult Function(SpecializationError value)? specializationError,
     required TResult orElse(),
   }) {
     if (specializationSuccess != null) {
@@ -480,8 +480,8 @@ class _$SpecializationSuccessImpl implements _SpecializationSuccess {
   }
 }
 
-abstract class _SpecializationSuccess implements HomeState {
-  const factory _SpecializationSuccess(
+abstract class SpecializationSuccess implements HomeState {
+  const factory SpecializationSuccess(
           final SpecializationResponseModel specializationResponseModel) =
       _$SpecializationSuccessImpl;
 
@@ -497,7 +497,7 @@ abstract class _$$SpecializationErrorImplCopyWith<$Res> {
           $Res Function(_$SpecializationErrorImpl) then) =
       __$$SpecializationErrorImplCopyWithImpl<$Res>;
   @useResult
-  $Res call({String message});
+  $Res call({ErrorHandler error});
 }
 
 /// @nodoc
@@ -511,28 +511,28 @@ class __$$SpecializationErrorImplCopyWithImpl<$Res>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? message = null,
+    Object? error = null,
   }) {
     return _then(_$SpecializationErrorImpl(
-      null == message
-          ? _value.message
-          : message // ignore: cast_nullable_to_non_nullable
-              as String,
+      null == error
+          ? _value.error
+          : error // ignore: cast_nullable_to_non_nullable
+              as ErrorHandler,
     ));
   }
 }
 
 /// @nodoc
 
-class _$SpecializationErrorImpl implements _SpecializationError {
-  const _$SpecializationErrorImpl(this.message);
+class _$SpecializationErrorImpl implements SpecializationError {
+  const _$SpecializationErrorImpl(this.error);
 
   @override
-  final String message;
+  final ErrorHandler error;
 
   @override
   String toString() {
-    return 'HomeState.specializationError(message: $message)';
+    return 'HomeState.specializationError(error: $error)';
   }
 
   @override
@@ -540,11 +540,11 @@ class _$SpecializationErrorImpl implements _SpecializationError {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$SpecializationErrorImpl &&
-            (identical(other.message, message) || other.message == message));
+            (identical(other.error, error) || other.error == error));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, message);
+  int get hashCode => Object.hash(runtimeType, error);
 
   @JsonKey(ignore: true)
   @override
@@ -561,9 +561,9 @@ class _$SpecializationErrorImpl implements _SpecializationError {
     required TResult Function(
             SpecializationResponseModel specializationResponseModel)
         specializationSuccess,
-    required TResult Function(String message) specializationError,
+    required TResult Function(ErrorHandler error) specializationError,
   }) {
-    return specializationError(message);
+    return specializationError(error);
   }
 
   @override
@@ -573,9 +573,9 @@ class _$SpecializationErrorImpl implements _SpecializationError {
     TResult? Function()? specializationLoading,
     TResult? Function(SpecializationResponseModel specializationResponseModel)?
         specializationSuccess,
-    TResult? Function(String message)? specializationError,
+    TResult? Function(ErrorHandler error)? specializationError,
   }) {
-    return specializationError?.call(message);
+    return specializationError?.call(error);
   }
 
   @override
@@ -585,11 +585,11 @@ class _$SpecializationErrorImpl implements _SpecializationError {
     TResult Function()? specializationLoading,
     TResult Function(SpecializationResponseModel specializationResponseModel)?
         specializationSuccess,
-    TResult Function(String message)? specializationError,
+    TResult Function(ErrorHandler error)? specializationError,
     required TResult orElse(),
   }) {
     if (specializationError != null) {
-      return specializationError(message);
+      return specializationError(error);
     }
     return orElse();
   }
@@ -598,11 +598,11 @@ class _$SpecializationErrorImpl implements _SpecializationError {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
-    required TResult Function(_SpecializationLoading value)
+    required TResult Function(SpecializationLoading value)
         specializationLoading,
-    required TResult Function(_SpecializationSuccess value)
+    required TResult Function(SpecializationSuccess value)
         specializationSuccess,
-    required TResult Function(_SpecializationError value) specializationError,
+    required TResult Function(SpecializationError value) specializationError,
   }) {
     return specializationError(this);
   }
@@ -611,9 +611,9 @@ class _$SpecializationErrorImpl implements _SpecializationError {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial value)? initial,
-    TResult? Function(_SpecializationLoading value)? specializationLoading,
-    TResult? Function(_SpecializationSuccess value)? specializationSuccess,
-    TResult? Function(_SpecializationError value)? specializationError,
+    TResult? Function(SpecializationLoading value)? specializationLoading,
+    TResult? Function(SpecializationSuccess value)? specializationSuccess,
+    TResult? Function(SpecializationError value)? specializationError,
   }) {
     return specializationError?.call(this);
   }
@@ -622,9 +622,9 @@ class _$SpecializationErrorImpl implements _SpecializationError {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
-    TResult Function(_SpecializationLoading value)? specializationLoading,
-    TResult Function(_SpecializationSuccess value)? specializationSuccess,
-    TResult Function(_SpecializationError value)? specializationError,
+    TResult Function(SpecializationLoading value)? specializationLoading,
+    TResult Function(SpecializationSuccess value)? specializationSuccess,
+    TResult Function(SpecializationError value)? specializationError,
     required TResult orElse(),
   }) {
     if (specializationError != null) {
@@ -634,11 +634,11 @@ class _$SpecializationErrorImpl implements _SpecializationError {
   }
 }
 
-abstract class _SpecializationError implements HomeState {
-  const factory _SpecializationError(final String message) =
+abstract class SpecializationError implements HomeState {
+  const factory SpecializationError(final ErrorHandler error) =
       _$SpecializationErrorImpl;
 
-  String get message;
+  ErrorHandler get error;
   @JsonKey(ignore: true)
   _$$SpecializationErrorImplCopyWith<_$SpecializationErrorImpl> get copyWith =>
       throw _privateConstructorUsedError;

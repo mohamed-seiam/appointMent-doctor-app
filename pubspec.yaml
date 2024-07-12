@@ -58,7 +58,7 @@ dependencies:
   intl: any
   easy_localization: ^3.0.7
   flutter_native_splash: ^2.3.5
-  cached_network_image: ^3.3.0
+  cached_network_image: ^3.3.1
   # showing svg in flutter
   flutter_svg: ^2.0.9
   # for adapting screen and fontSize
