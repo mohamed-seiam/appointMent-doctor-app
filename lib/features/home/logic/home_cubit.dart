@@ -10,7 +10,7 @@ class HomeCubit extends Cubit<HomeState> {
     emit(const HomeState.specializationLoading());
     final result = await _homeRepo.getSpecialization();
     result.when(
-      success: (specializationResponseModel) {
+      success: (specializationResponseModel)  {
         emit(HomeState.specializationSuccess(specializationResponseModel));
       },
       failure: (error) {
@@ -18,4 +18,5 @@ class HomeCubit extends Cubit<HomeState> {
       },
     );
   }
+
 }

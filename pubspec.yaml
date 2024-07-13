@@ -64,6 +64,8 @@ dependencies:
   # for adapting screen and fontSize
   flutter_screenutil: ^5.9.0
   firebase_core: ^2.27.0
+  flutter_secure_storage: ^4.2.1
+  shimmer: ^3.0.0
 
 dev_dependencies:
   flutter_test:

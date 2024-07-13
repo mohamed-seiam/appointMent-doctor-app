@@ -20,7 +20,7 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const OnBoardingScreen());
       case Routes.homeScreen:
         return MaterialPageRoute(builder: (_) => BlocProvider(
-          create:(_)=> HomeCubit(getIt()),
+          create:(_)=> HomeCubit(getIt())..getSpecialization(),
             child: const HomeScreenWidget()));
       case Routes.logInScreen:
         return MaterialPageRoute(

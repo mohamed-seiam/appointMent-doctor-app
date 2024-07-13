@@ -4,10 +4,11 @@ import 'package:appointment_doctor_app/core/theming/color_manager.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+import 'core/helper/constants.dart';
 class DocApp extends StatelessWidget {
   final AppRouter appRouter;
 
-  const DocApp({Key? key, required this.appRouter}) : super(key: key);
+  const DocApp({super.key, required this.appRouter});
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +22,7 @@ class DocApp extends StatelessWidget {
           primaryColor: ColorManager.mainBlue,
           scaffoldBackgroundColor: Colors.white,
         ),
-        initialRoute: Routes.homeScreen,
+        initialRoute: isLoggedIn ? Routes.homeScreen : Routes.logInScreen,
         onGenerateRoute: appRouter.generateRoute,
       ),
     );
